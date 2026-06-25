@@ -79,17 +79,6 @@ body::after {
   box-shadow: var(--shadow);
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: auto -60px -60px auto;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  background:
-    radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.96), rgba(95, 132, 167, 0.32));
-}
-
 .eyebrow,
 .section-label,
 .gift-tag {
