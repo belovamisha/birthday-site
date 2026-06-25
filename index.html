@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>С днем рождения, Кусь</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Unbounded:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <p class="eyebrow">Happy birthday mode: activated</p>
+        <h1>С днем рождения, мой самый любимый человек</h1>
+        <p class="hero-text">
+          Я знаю, что ты не любишь поздравления, поэтому просто хочу сказать,
+          что ты самый замечательный на свете. Мой главный подарок это
+          постараться сделать твою жизнь яркой и насыщенной. Я рада разделять с
+          тобой сегодня, и еще много много дней в твоем новом году.
+        </p>
+        <a class="hero-link" href="#gifts">Кусь</a>
+      </header>
+
+      <main>
+        <section class="note-card">
+          <div>
+            <p class="section-label">Небольшое послание</p>
+            <h2>Этот день официально твой</h2>
+          </div>
+          <p>
+            Спасибо, что ты у меня есть. Сегодня я исполняю любое твое желание.
+            Мой телефон будет выключен два дня, все рабочие чаты предупреждены,
+            это время только наше.
+          </p>
+        </section>
+
+        <section class="gifts-section" id="gifts">
+          <div class="section-heading">
+            <p class="section-label">Список подарков</p>
+            <h2>Выбирай, что откликается сердцу</h2>
+            <p>
+              У тебя есть 3 очка. Их можно потратить на один большой подарок
+              или собрать несколько маленьких.
+            </p>
+          </div>
+
+          <section class="points-panel" aria-label="Счетчик очков">
+            <div class="points-card">
+              <p class="section-label">Твой лимит</p>
+              <h3><span id="points-left">3</span> из 3 очков осталось</h3>
+              <p id="points-hint">
+                Выбирай подарки так, чтобы уложиться в лимит.
+              </p>
+            </div>
+          </section>
+
+          <div class="gift-grid">
+            <article
+              class="gift-card"
+              data-gift-name="Новенький телевизор"
+              data-gift-cost="3"
+            >
+              <span class="gift-tag">Главный приз</span>
+              <h3>Новенький телевизор</h3>
+              <p class="gift-cost">Стоимость: 3 очка</p>
+              <p>
+                Большой и красивый, чтобы мы вместе смотрели "Марсианина" раз в
+                десять и каждый раз как в первый.
+              </p>
+              <button class="gift-button" type="button">
+                Выбрать подарок
+              </button>
+            </article>
+
+            <article
+              class="gift-card"
+              data-gift-name="Мобильный байк-апгрейд"
+              data-gift-cost="1"
+            >
+              <span class="gift-tag">Практично</span>
+              <h3>Мобильный байк-апгрейд</h3>
+              <p class="gift-cost">Стоимость: 1 очко</p>
+              <p>
+                Классная гарнитура для байка и держатель для телефона с
+                подавлением вибраций.
+              </p>
+              <button class="gift-button" type="button">
+                Выбрать подарок
+              </button>
+            </article>
+
+            <article
+              class="gift-card"
+              data-gift-name="Ручки паркер"
+              data-gift-cost="1"
+            >
+              <span class="gift-tag">Классика</span>
+              <h3>Ручки паркер</h3>
+              <p class="gift-cost">Стоимость: 1 очко</p>
+              <p>
+                Новенький набор с чехлом, пока твой не развалился до конца.
+              </p>
+              <button class="gift-button" type="button">
+                Выбрать подарок
+              </button>
+            </article>
+
+            <article
+              class="gift-card"
+              data-gift-name="Выбор театрала"
+              data-gift-cost="3"
+            >
+              <span class="gift-tag">Впечатление</span>
+              <h3>Выбор театрала</h3>
+              <p class="gift-cost">Стоимость: 3 очка</p>
+              <p>
+                Путешествие в Санкт-Петербург на выходные на спектакль
+                Бутусова.
+              </p>
+              <button class="gift-button" type="button">
+                Выбрать подарок
+              </button>
+            </article>
+
+            <article
+              class="gift-card"
+              data-gift-name="Экстрим-пак"
+              data-gift-cost="2"
+            >
+              <span class="gift-tag">Адреналин</span>
+              <h3>Экстрим-пак</h3>
+              <p class="gift-cost">Стоимость: 2 очка</p>
+              <p>
+                Эндуро курсы, чтобы чувствовать себя уверенно в любой ситуации.
+              </p>
+              <button class="gift-button" type="button">
+                Выбрать подарок
+              </button>
+            </article>
+
+            <article
+              class="gift-card"
+              data-gift-name="Ленивый вайб"
+              data-gift-cost="2"
+            >
+              <span class="gift-tag">Отдых</span>
+              <h3>Ленивый вайб</h3>
+              <p class="gift-cost">Стоимость: 2 очка</p>
+              <p>
+                Путешествие на выходные в Подмосковье, разгрузиться и посидеть
+                в лесу в тишине.
+              </p>
+              <button class="gift-button" type="button">
+                Выбрать подарок
+              </button>
+            </article>
+
+            <article
+              class="gift-card"
+              data-gift-name="Выбор коллекционера"
+              data-gift-cost="2"
+            >
+              <span class="gift-tag">Технологично</span>
+              <h3>Выбор коллекционера</h3>
+              <p class="gift-cost">Стоимость: 2 очка</p>
+              <p>
+                Еще один айфон, потому что apparently трех иногда мало.
+              </p>
+              <button class="gift-button" type="button">
+                Выбрать подарок
+              </button>
+            </article>
+
+            <article
+              class="gift-card"
+              data-gift-name="Красивое и бесполезное"
+              data-gift-cost="1"
+            >
+              <span class="gift-tag">Эстетика</span>
+              <h3>Красивое и бесполезное</h3>
+              <p class="gift-cost">Стоимость: 1 очко</p>
+              <p>
+                Механическая игрушка-кит, чтобы занять еще место на твоем
+                рабочем столе.
+              </p>
+              <button class="gift-button" type="button">
+                Выбрать подарок
+              </button>
+            </article>
+
+            <article
+              class="gift-card"
+              data-gift-name="Выбор экстремала"
+              data-gift-cost="2"
+            >
+              <span class="gift-tag">Высший пилотаж</span>
+              <h3>Выбор экстремала</h3>
+              <p class="gift-cost">Стоимость: 2 очка</p>
+              <p>
+                Полет на истребителе с фигурами высшего пилотажа.
+              </p>
+              <button class="gift-button" type="button">
+                Выбрать подарок
+              </button>
+            </article>
+          </div>
+        </section>
+
+        <section class="choice-panel" id="choice-panel">
+          <p class="section-label">Твой выбор</p>
+          <h2 id="choice-title">Пока ничего не выбрано</h2>
+          <p id="choice-text">
+            Выбирай один подарок или несколько маленьких, пока хватает очков.
+          </p>
+          <div class="choice-list" id="choice-list"></div>
+          <form
+            class="submit-form"
+            id="submit-form"
+            action="https://formsubmit.co/belovamishel95@gmail.com"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="Новый выбор подарков с сайта"
+            />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://formsubmit.co/thanks"
+            />
+            <input type="hidden" name="selected_gifts" id="selected-gifts" />
+            <input type="hidden" name="points_used" id="points-used" />
+            <input type="hidden" name="points_left" id="points-left-field" />
+
+            <div class="choice-actions">
+              <button class="send-button" type="submit" id="send-button" disabled>
+                Отправить выбор
+              </button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
